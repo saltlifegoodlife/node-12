@@ -1,3 +1,8 @@
+:root{
+  --dark-blue: #13293d;
+  --white: #fff;
+  --bR: 50px;
+}
 body {
   font-size: 16px;
   display: flex;
@@ -19,7 +24,7 @@ h2 {
 header {
   padding: 40px;
   text-align: center;
-  background: #13293d;
+  background: var(--dark-blue);
   color: #fff;
 }
 
@@ -29,7 +34,7 @@ nav {
 }
 
 nav a {
-  color: #13293d;
+  color: var(--dark-blue);
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
@@ -49,7 +54,7 @@ footer {
   bottom: 0;
   padding: 20px;
   text-align: center;
-  background: #13293d;
+  background: var(--dark-blue);
   color: #fff;
   margin-top: auto;
 }
@@ -66,7 +71,7 @@ footer {
 .card {
   border-style: solid;
   border-width: 1px;
-  border-radius: 50px;
+  border-radius: var(--bR);
   padding: 10px;
   flex: 0 0 300px;
   transform: rotate(8deg);
@@ -75,7 +80,7 @@ footer {
 }
 
 .card > header {
-  border-radius: 50px 50px 0px 0px;
+  border-radius: var(--bR) var(--bR) 0px 0px;
   padding: 20px;
 }
 
