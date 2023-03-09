@@ -89,15 +89,24 @@ footer {
 }
 
 /* TODO: Add styles to display and hide the resource links */
-.resources-div {
+.resources .link {
   display: none;
 }
-.resources:hover .resources-div {
+.resources:hover .link {
   display: block;
 }
 
-.resources a {
+.resources h3 {
+  font-size: 150%;
+}
+
+.link a {
   text-decoration: none;
+}
+
+.link a:hover {
+  color: red;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 768px) {
