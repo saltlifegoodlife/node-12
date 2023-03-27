@@ -4,9 +4,19 @@ var decrementEl = document.querySelector("#decrement");
 var countEl = document.querySelector("#count");
 
 function setCounterText() {
-  countEl.textContent = count;
+  console.log(this);
+  if (this == incrementEl) {
+    count++;
+    countEl.textContent = count;
+  } else {
+    if (0 < count) {
+      count--;
+      countEl.textContent = count;
+    }
+  }
 }
 
 // TODO: Add event listener to increment button
-
-// TODO: Add event listener to decrement button 
+incrementEl.addEventListener("click", setCounterText);
+decrementEl.addEventListener("click", setCounterText);
+// TODO: Add event listener to decrement button
